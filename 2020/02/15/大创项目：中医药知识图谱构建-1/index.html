@@ -8,20 +8,30 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>大创项目：中医药知识图谱构建(1) | 備備備的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="基于python下的知识图谱的开发">
+  <meta name="description" content="基于python下的知识图谱的开发该项目是我以及我们宿舍小组SSK第一个正式的项目，虽然之前也一起做过一个开源游戏，但其质量真的不敢恭维。相信这个项目在导师——刘旭红的带领下可以有较高质量的完成吧。这里我就一博客的形式记录一下我们的大致开发过程，其中会包含用到了那些技术，我从中学到了什么，以及部分代码记录，方便自己往后想要在其中某方面继续发展时翻看来用。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="大创项目：中医药知识图谱构建(1)">
 <meta property="og:url" content="http://yoursite.com/2020/02/15/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE%EF%BC%9A%E4%B8%AD%E5%8C%BB%E8%8D%AF%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-1/index.html">
 <meta property="og:site_name" content="備備備的博客">
-<meta property="og:description" content="基于python下的知识图谱的开发">
+<meta property="og:description" content="基于python下的知识图谱的开发该项目是我以及我们宿舍小组SSK第一个正式的项目，虽然之前也一起做过一个开源游戏，但其质量真的不敢恭维。相信这个项目在导师——刘旭红的带领下可以有较高质量的完成吧。这里我就一博客的形式记录一下我们的大致开发过程，其中会包含用到了那些技术，我从中学到了什么，以及部分代码记录，方便自己往后想要在其中某方面继续发展时翻看来用。">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2020/02/15/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE%EF%BC%9A%E4%B8%AD%E5%8C%BB%E8%8D%AF%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-1/tupian.png">
+<meta property="og:image" content="http://yoursite.com/2020/02/15/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE%EF%BC%9A%E4%B8%AD%E5%8C%BB%E8%8D%AF%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-1/tupian1.PNG">
+<meta property="og:image" content="http://yoursite.com/2020/02/15/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE%EF%BC%9A%E4%B8%AD%E5%8C%BB%E8%8D%AF%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-1/tupian2.PNG">
+<meta property="og:image" content="http://yoursite.com/2020/02/15/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE%EF%BC%9A%E4%B8%AD%E5%8C%BB%E8%8D%AF%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-1/tupian3.PNG">
+<meta property="og:image" content="http://yoursite.com/2020/02/15/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE%EF%BC%9A%E4%B8%AD%E5%8C%BB%E8%8D%AF%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-1/tupian4.PNG">
+<meta property="og:image" content="http://yoursite.com/2020/02/15/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE%EF%BC%9A%E4%B8%AD%E5%8C%BB%E8%8D%AF%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-1/tupian5.PNG">
+<meta property="og:image" content="http://yoursite.com/2020/02/15/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE%EF%BC%9A%E4%B8%AD%E5%8C%BB%E8%8D%AF%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-1/tupian6.PNG">
 <meta property="article:published_time" content="2020-02-15T14:06:26.000Z">
-<meta property="article:modified_time" content="2020-02-15T15:58:18.466Z">
+<meta property="article:modified_time" content="2020-02-19T10:52:18.167Z">
 <meta property="article:author" content="備">
-<meta property="article:tag" content="python">
-<meta property="article:tag" content="成长">
 <meta property="article:tag" content="大二">
+<meta property="article:tag" content="成长">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="scrapy爬虫">
+<meta property="article:tag" content="大创项目">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/02/15/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE%EF%BC%9A%E4%B8%AD%E5%8C%BB%E8%8D%AF%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-1/tupian.png">
   
     <link rel="alternative" href="/atom.xml" title="備備備的博客" type="application/atom+xml">
   
@@ -185,7 +195,95 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="基于python下的知识图谱的开发"><a href="#基于python下的知识图谱的开发" class="headerlink" title="基于python下的知识图谱的开发"></a>基于python下的知识图谱的开发</h2>
+        <h2 id="基于python下的知识图谱的开发"><a href="#基于python下的知识图谱的开发" class="headerlink" title="基于python下的知识图谱的开发"></a>基于python下的知识图谱的开发</h2><p>该项目是我以及我们宿舍小组SSK第一个正式的项目，虽然之前也一起做过一个开源游戏，但其质量真的不敢恭维。相信这个项目在导师——刘旭红的带领下可以有较高质量的完成吧。这里我就一博客的形式记录一下我们的大致开发过程，其中会包含用到了那些技术，我从中学到了什么，以及部分代码记录，方便自己往后想要在其中某方面继续发展时翻看来用。</p>
+<a id="more"></a>
+
+<h4 id="项目目的及简介"><a href="#项目目的及简介" class="headerlink" title="项目目的及简介"></a>项目目的及简介</h4><p><strong>目的</strong>：用人话来说就是做一个类似关系图的东西，由于我们自己选择的方向是中医药材方面的领域，所以最开始的打算是根据不同药材的性味，化学成分，剂量等方面构建一个药材配方库，即通过一个药材的属性找到该药材并根据其属性找出该药材的相关配方，这个过程应该是双向的。<del>上述皆为个人理解，因为暂时我们团队里面仍有部分意见未统一</del></p>
+<p><strong>简介：</strong>同目的。</p>
+<h4 id="项目分工及目前进度"><a href="#项目分工及目前进度" class="headerlink" title="项目分工及目前进度"></a>项目分工及目前进度</h4><p><strong>分工：</strong>由于我们目前团队较小，而且沟通时分方便，且每个人现阶段真正会的技术也都相差不大并无特色专长，所以分工完全就是项目的一个部分布置下去之后大家一起做，最终谁做的最好就竞选成功 d=====(￣▽￣*)b，但是这也导致了我们这种无专长的情况一直在持续…….</p>
+<p><strong>目前进度：</strong>目前主要还是数据的收集和整理，原计划该项目会持续一年的时间，但由于一个学姐的加入项目的工期从1年缩短到了3个月 (＝。＝)，如果问题不大的话，我个人认为收集数据及整理已经基本完工了，下一步主要是确定一下项目方向然后，进行实体及实体关系的抽取，并导入neo4j数据库即可。<del>我看网上都是直接将数据导入neo4j数据库然后数据库就可以自己导出一个关系图的</del></p>
+<h4 id="目前个人接触到的技术点"><a href="#目前个人接触到的技术点" class="headerlink" title="目前个人接触到的技术点"></a>目前个人接触到的技术点</h4><h5 id="一-Scrapy爬虫框架"><a href="#一-Scrapy爬虫框架" class="headerlink" title="一.Scrapy爬虫框架"></a>一.Scrapy爬虫框架</h5><p>在数据采集的part我们主要应用了scrapy框架，主要是因为其相当的简便，相比于自己完整的写一个爬虫而言，scrapy框架已经将大部分代码写好，主要需要用户写的就只有一个spider类（爬取数据的逻辑类），其余的只剩下了一些pipeline的导入和setting的配置问题。这也是我第一次真正意义上的接触<strong>框架</strong>这个概念，原来看过一些视频上面说javaEE与javaSE的区别就是框架，而框架在实战中也扮演着一个重要的角色。所以这里就稍微的记录一下我在使用scrapy框架时的心得吧。</p>
+<hr>
+<p><strong>1、下载配置</strong></p>
+<p>在配置的时候看过很多很麻烦的方法——下载离线包什么的，其究其原因无非都是因为在国内直接pip install scrapy时由于网速不达标，导致各种报错，我这里直接用了一个镜像就下载好啦。命令行如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install scrapy -i http:&#x2F;&#x2F;pypi.douban.com&#x2F;simple --trusted-host pypi.douban.com</span><br></pre></td></tr></table></figure>
+
+<p>我也不确定这个链接能撑多久，但到写本文之时仍然好使。</p>
+<p><strong>2、开始项目</strong></p>
+<p>这一步主要是在终端完成的不管是git bash，cmd，pycharm自带的终端都可以，只要键入以下命令行即可：</p>
+<img src="/2020/02/15/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE%EF%BC%9A%E4%B8%AD%E5%8C%BB%E8%8D%AF%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-1/tupian.png" class>
+
+<p>得到以下目录就算是成功了！！！</p>
+<img src="/2020/02/15/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE%EF%BC%9A%E4%B8%AD%E5%8C%BB%E8%8D%AF%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-1/tupian1.PNG" class>
+
+<p><strong>3、代码部分</strong></p>
+<p>在得到了目录之后我们主要的代码是写在parse函数中的，而参数中的response（请求响应）就是我们主要利用的东西。而上面的<code>allowed_domains</code>和<code>start_urls</code>则分别代表要爬取的网页不得超过<code>allowed_domains</code>，开始爬取的页面为<code>start_urls</code>，parse部分的代码主要用到了<a href="https://www.w3school.com.cn/xpath/xpath_syntax.asp" target="_blank" rel="noopener">xpath</a>和<a href="https://www.sojson.com/regex/generate" target="_blank" rel="noopener">正则表达式</a>两个工具获取网页中要爬取的内容，其中正则表达式充当了一个筛选的作用，而xpath则是获取内容的作用。这里推荐两款Chrome中非常有用的插件——Xpath Helper，regex matcher。中间的代码部分可参考如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">from</span> ..items <span class="keyword">import</span> ZhongyiyaospiderItem</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ZhongyiyaoSpider</span><span class="params">(scrapy.Spider)</span>:</span></span><br><span class="line">    name = <span class="string">'zhongyiyao'</span></span><br><span class="line">    allowed_domains = [<span class="string">'zhongyaocai360.com'</span>]</span><br><span class="line">    start_urls = [<span class="string">'http://zhongyaocai360.com/zhongyaodacidian/'</span>]</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">parse</span><span class="params">(self, response)</span>:</span></span><br><span class="line">        zhongyao_list=response.xpath(<span class="string">"//div[@class='spider']/ul/li/a/@href"</span>).extract()</span><br><span class="line">        <span class="keyword">if</span> zhongyao_list:</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span>  zhongyao_list:</span><br><span class="line">                detail_urls=response.urljoin(i)</span><br><span class="line">                <span class="keyword">yield</span> scrapy.Request(detail_urls,callback=self.detail_parse)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">detail_parse</span><span class="params">(self,response)</span>:</span></span><br><span class="line">        name=[]</span><br><span class="line">        name=response.xpath(<span class="string">"//h2/text()"</span>).re(<span class="string">"《.*"</span>)[<span class="number">0</span>]</span><br><span class="line">        gongneng=[]</span><br><span class="line">        zhongyao_zhuzhi_url=response.xpath(<span class="string">"//div[@class='gnzzp']/p"</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> zhongyao_zhuzhi_url:</span><br><span class="line">            gongneng=i.xpath(<span class="string">"string(.)"</span>)[<span class="number">0</span>].extract()</span><br><span class="line">        piny=[]</span><br><span class="line">        other_name=[]</span><br><span class="line">        laiyuan=[]</span><br><span class="line">        xingwei=[]</span><br><span class="line">        yongfa=[]</span><br><span class="line">        zhailu=[]</span><br><span class="line"></span><br><span class="line">        zhongyao_content=response.xpath(<span class="string">"//p"</span>)</span><br><span class="line">        <span class="keyword">if</span> zhongyao_content:</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> zhongyao_content:</span><br><span class="line">                content=i.xpath(<span class="string">"string(.)"</span>)</span><br><span class="line">                <span class="keyword">if</span> content.re(<span class="string">"【拼音.*"</span>):</span><br><span class="line">                    piny=content[<span class="number">0</span>].extract()</span><br><span class="line">                <span class="keyword">if</span> content.re(<span class="string">"【别名.*"</span>):</span><br><span class="line">                    other_name=content[<span class="number">0</span>].extract()</span><br><span class="line">                <span class="keyword">if</span> content.re(<span class="string">"【来源.*"</span>):</span><br><span class="line">                    laiyuan=content[<span class="number">0</span>].extract()</span><br><span class="line">                <span class="keyword">if</span> content.re(<span class="string">"【性味.*"</span>):</span><br><span class="line">                    xingwei=content[<span class="number">0</span>].extract()</span><br><span class="line">                <span class="keyword">if</span> content.re(<span class="string">"【用法.*"</span>):</span><br><span class="line">                    yongfa=content[<span class="number">0</span>].extract()</span><br><span class="line">                <span class="keyword">if</span> content.re(<span class="string">"【摘录.*"</span>):</span><br><span class="line">                    zhailu=content[<span class="number">0</span>].extract()</span><br><span class="line">        item=&#123;</span><br><span class="line">            <span class="string">"name"</span>:name,</span><br><span class="line">            <span class="string">"gongneng"</span>:gongneng,</span><br><span class="line">            <span class="string">'other_name'</span>:other_name,</span><br><span class="line">            <span class="string">"yongfa"</span>:yongfa,</span><br><span class="line">            <span class="string">"xingwei"</span>:xingwei,</span><br><span class="line">            <span class="string">"zhailu"</span>:zhailu,</span><br><span class="line">            <span class="string">"laiyuan"</span>:laiyuan,</span><br><span class="line">            <span class="string">"piny"</span>:piny</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">yield</span> item</span><br><span class="line">        <span class="comment">#zhongyao_content=response.xpath("").extract()</span></span><br></pre></td></tr></table></figure>
+
+<p>这其中值得说一下的就是yield的时候用，yield的用法和功能类似于return，但是他可以不断返回<del>（return返回一次然后就break了）</del>，而每次返回之后yield会暂时停掉，然后再等到循环进展到yield之后再一次返回一个，这里用yield不断地给服务器发送request，用以得到response，再将这个接收到的response用callback返回给detail函数进行细节上的筛选处理。</p>
+<p><strong>3、item的使用</strong></p>
+<p>上面的例子中我用的时候自建的item（item说到底就是一个dict），并没有使用scrapy自带的items，但大多数情况下是需要使用的，而items的配置主要就是如下面代码所示：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ZhongyiyaospiderItem</span><span class="params">(scrapy.Item)</span>:</span></span><br><span class="line">    <span class="comment"># define the fields for your item here like:</span></span><br><span class="line">    name = scrapy.Field()</span><br><span class="line">    piny= scrapy.Field()</span><br><span class="line">    laiyuan=scrapy.Field()</span><br><span class="line">    other_name=scrapy.Field()</span><br><span class="line">    xingwei=scrapy.Field()</span><br><span class="line">    gongneng=scrapy.Field()</span><br><span class="line">    yongfa=scrapy.Field()</span><br><span class="line">    zhailu=scrapy.Field()</span><br></pre></td></tr></table></figure>
+
+<p>在需要使用到这些items时直接<code>from ..items import ZhongyiyaospiderItem</code>导入即可</p>
+<p><strong>4、pipeline的使用</strong></p>
+<p>​    <em>1、导入文本文件中</em></p>
+<p>可参考以下代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">XuexispiderPipeline</span><span class="params">(object)</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">process_item</span><span class="params">(self, item, spider)</span>:</span></span><br><span class="line">        base = os.getcwd()</span><br><span class="line">        file = base + <span class="string">"\学习强国.doc"</span></span><br><span class="line">        <span class="keyword">with</span> open(file,<span class="string">'a'</span>,encoding=<span class="string">'utf-8'</span>) <span class="keyword">as</span> f:</span><br><span class="line">            f.writelines(item[<span class="string">"content"</span>])</span><br><span class="line">        <span class="keyword">return</span> item</span><br></pre></td></tr></table></figure>
+
+<p>​    <em>2、导出图片到文件夹中</em></p>
+<p>可参考以下代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"><span class="keyword">from</span> scrapy.pipelines.images <span class="keyword">import</span> ImagesPipeline</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BeautyimgspiderPipeline</span><span class="params">(ImagesPipeline)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_media_requests</span><span class="params">(self, item, info)</span>:</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> item[<span class="string">"image_urls"</span>]:</span><br><span class="line">            <span class="keyword">yield</span> scrapy.Request(i)</span><br><span class="line">            logging.debug(<span class="string">"写入一个"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">process_item</span><span class="params">(self, item, spider)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> item</span><br></pre></td></tr></table></figure>
+
+<p>这里需要注意一下，因为这里用到了scrapy里面的图片管道所以在setting中的配置也与文本文件的不同。</p>
+<p>​    <em>3、导入到csv文件中</em></p>
+<p>可参考以下代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> csv</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ZhongyiyaospiderPipeline</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        base_dir = os.getcwd()</span><br><span class="line">        fiename = base_dir + <span class="string">'/zhongyao2.csv'</span></span><br><span class="line">        print(<span class="string">"*"</span> * <span class="number">80</span>)</span><br><span class="line">        self.file = open(fiename, <span class="string">'a+'</span>, encoding=<span class="string">'utf_8_sig'</span>, newline=<span class="string">''</span>)</span><br><span class="line">        self.writer = csv.writer(self.file, dialect=<span class="string">"excel"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">process_item</span><span class="params">(self, item, spider)</span>:</span></span><br><span class="line">        print(<span class="string">"正在写入............."</span>)</span><br><span class="line">        <span class="keyword">if</span> item[<span class="string">"name"</span>]:</span><br><span class="line">            self.writer.writerow([item[<span class="string">"name"</span>], item[<span class="string">"piny"</span>],item[<span class="string">'other_name'</span>],item[<span class="string">'laiyuan'</span>],item[<span class="string">'xingwei'</span>],item[<span class="string">'gongneng'</span>],item[<span class="string">'yongfa'</span>],item[<span class="string">'zhailu'</span>]])</span><br><span class="line">            <span class="keyword">return</span> item</span><br></pre></td></tr></table></figure>
+
+<p>这里也需要注意一下，由于csv和excel文件好像不直接支持<code>utf-8</code>，导致即使在写入时用的是<code>utf-8</code>编码中文也会出现乱码情况，所以这里采用了另外一种<code>utf_8_sig</code><del>em……….这个好像也是<code>utf-8</code></del>。</p>
+<p><strong>5、setting的配置</strong></p>
+<p>首先是<code>ROBOTSTXT_OBEY = False</code>从True改为False，这里是问爬虫是否遵从robots协议，那我们当然是不拉 ~(～￣▽￣)～，要不然很有可能会导致想要爬去的数据人家不让你爬，你就废了。</p>
+<p>其次就是</p>
+<img src="/2020/02/15/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE%EF%BC%9A%E4%B8%AD%E5%8C%BB%E8%8D%AF%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-1/tupian2.PNG" class>
+
+<p>这里需要将注释去掉，这样才能开启管道。而在存入图片的时候的管道由于是<code>ImagePipeline</code>所以应该是这样</p>
+<img src="/2020/02/15/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE%EF%BC%9A%E4%B8%AD%E5%8C%BB%E8%8D%AF%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-1/tupian3.PNG" class>
+
+<p>同时还需要加入图片的存储位置</p>
+<img src="/2020/02/15/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE%EF%BC%9A%E4%B8%AD%E5%8C%BB%E8%8D%AF%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-1/tupian4.PNG" class>
+
+<p>最后这里需要说一下控制爬虫爬取速度的设置</p>
+<img src="/2020/02/15/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE%EF%BC%9A%E4%B8%AD%E5%8C%BB%E8%8D%AF%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-1/tupian5.PNG" class>
+
+<p>这里其实一般都是注释掉的，注释掉的时候爬取速度一般也不会太慢，如果很慢的话基本都是自己家网络问题，其中的<code>DOWLOAD_DELAY</code>默认为0，有时爬取太快的话网络请求不过来会有一个报错码为600多的报错，这时将<code>DOWLOAD_DELAY</code>调大点就好啦。</p>
+<p><strong>6、一点点的反反爬</strong></p>
+<p>有时有的网站在爬取的时候会有一个报错码403的错误，这时我们只需要在该网页中按下<code>F12</code>，并在Network中找到user-agent项并加到setting里即可</p>
+<img src="/2020/02/15/%E5%A4%A7%E5%88%9B%E9%A1%B9%E7%9B%AE%EF%BC%9A%E4%B8%AD%E5%8C%BB%E8%8D%AF%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-1/tupian6.PNG" class>
+
+<p><strong>7、运行爬虫</strong></p>
+<p>直接在cmd，git bash，pycharm-terminal中键入<code>scrapy crawl [爬虫名字]</code>即可</p>
+<p><strong>总结：</strong>以上就是我在这次项目中接触到的scrapy爬虫的一些技术要点，像代理IP和中间件等更难的应用，暂时我还没有勇气去碰。虽然这次浅尝辄止了，但是如果未来有机会有精力的话还是可以继续研究一下的。</p>
+<h5 id="二-pandas数据清洗"><a href="#二-pandas数据清洗" class="headerlink" title="二.pandas数据清洗"></a>二.pandas数据清洗</h5><p>由于我们之前爬取的数据主要是以csv和excel文件存储的，所以这里经过我们的搜查就选用了pandas这个库进行数据上的处理，主要就是一些数据上的去重和缺失补全<del>(缺失删除)</del>，最后整理得出了大约1w条比较完美的数据，经过老师的许可，这1w条数据将会成为我们最终形成知识图谱的依据。</p>
+<hr>
+<p>由于对数据的处理相对简单所以这里只用到了几个语句，这里暂时陈列一下：</p>
+<ul>
+<li><p><code>a=pandas.read_excel(&#39;medicine.xlsx&#39;,index_col=None,na_values=[&#39;NA&#39;])</code>读取excel文档</p>
+</li>
+<li><p><code>a=a.replace(&#39;[]&#39;,numpy.nan)</code>因为原来的excel文件里我们用“[]”表示的空，所以这里用numpy里面的null替换一下方便后面对其进行缺失删除的操作</p>
+</li>
+<li><p><code>a=a.dropna(how=&#39;any&#39;)</code>这里就是将只要有空值的行就进行删除</p>
+</li>
+<li><p><code>c=a.append(b)</code>由于我一共处理了两个表就已经凑够了1w的数据量，所以这里直接进行一下拼接</p>
+</li>
+<li><p><code>c=c.drop_duplicates()</code>这一句是对拼接的表c进行去重操作</p>
+</li>
+<li><p><code>c.to_excel(&quot;pandas_excel.xlsx&quot;)</code>再导出到excel文件中</p>
+</li>
+</ul>
+<p><strong>总结：</strong>这里可以看出其实pandas库还是非常好用的，对于去重补全的操作还是很简单的。</p>
+<hr>
+<p><strong>相关链接：</strong></p>
+
       
 
       
@@ -198,7 +296,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">大二</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -206,7 +304,15 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">大二</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">scrapy爬虫</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">大创项目</a>
         		</li>
       		
 		</ul>
@@ -413,15 +519,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
+                <a href="javascript:void(0)" class="js-tag color3">大二</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">成长</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">大二</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -430,6 +532,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">java后端学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">scrapy爬虫</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">大创项目</a>
               </li>
             
             <div class="clearfix"></div>
