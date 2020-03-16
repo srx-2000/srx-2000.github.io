@@ -28,6 +28,7 @@
 <meta property="og:image" content="http://yoursite.com/2020/03/14/java%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-1/tupian10.png">
 <meta property="og:image" content="http://yoursite.com/2020/03/14/java%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-1/tupian12.png">
 <meta property="og:image" content="http://yoursite.com/2020/03/14/java%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-1/tupian11.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/14/java%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-1/tupian21.png">
 <meta property="og:image" content="http://yoursite.com/2020/03/14/java%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-1/tupian13.png">
 <meta property="og:image" content="http://yoursite.com/2020/03/14/java%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-1/tupian14.png">
 <meta property="og:image" content="http://yoursite.com/2020/03/14/java%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-1/tupian15.png">
@@ -37,7 +38,7 @@
 <meta property="og:image" content="http://yoursite.com/2020/03/14/java%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-1/tupian19.png">
 <meta property="og:image" content="http://yoursite.com/2020/03/14/java%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-1/tupian20.png">
 <meta property="article:published_time" content="2020-03-14T07:14:58.000Z">
-<meta property="article:modified_time" content="2020-03-14T11:34:52.786Z">
+<meta property="article:modified_time" content="2020-03-16T09:55:25.874Z">
 <meta property="article:author" content="備">
 <meta property="article:tag" content="大二">
 <meta property="article:tag" content="成长">
@@ -379,6 +380,11 @@
 </ol>
 </li>
 <li><p><strong>表的增删改</strong></p>
+<p><strong>在进行表的增删改之前我们现需要知道一个很重要的概念<em>约束</em></strong></p>
+<p>这里由于犯懒就暂时就先只贴一张菜鸟教程里的图片了</p>
+<img src="/2020/03/14/java%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-1/tupian21.png" class>
+
+<p>其中的<code>foreign key</code>是标准的表约束，即写在表的最后，其余的都和做列约束，即关键字写在每个创建列的子句的后面。还有一点就是<code>foreign key</code>的值必须也为key（可以是primary key，unique，foreign key）。<del>其中<code>CHECK</code>在mysql中不起作用</del></p>
 <ol>
 <li><p><strong>增</strong></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> table_name</span><br><span class="line">(</span><br><span class="line">column_name1 data_type(<span class="keyword">size</span>),</span><br><span class="line">column_name2 data_type(<span class="keyword">size</span>),</span><br><span class="line">column_name3 data_type(<span class="keyword">size</span>),</span><br><span class="line">....</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
@@ -405,9 +411,10 @@
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> &lt;table_name&gt; <span class="keyword">CHANGE</span> <span class="keyword">COLUMN</span> old_column_name new_column_name data_type(<span class="keyword">size</span>)</span><br></pre></td></tr></table></figure>
 
 <p>这个语句是用来更改表中列的名称的，但是我实在是不明白为什么要在这个的最后加入数据类型。。。。。。</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> &lt;table_name&gt; <span class="keyword">modify</span> <span class="keyword">column</span> column_name new_data_type(<span class="keyword">size</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> &lt;table_name&gt; <span class="keyword">MODIFY</span> <span class="keyword">COLUMN</span> column_name new_data_type(<span class="keyword">size</span>)</span><br></pre></td></tr></table></figure>
 
 <p>这个语句是更改指定列的数据的类型的，值得一提的是其中<code>varchar</code>类型在不同<code>size</code>下属于不同的数据类型，所以如果要给字符型扩容需要用到此语句。</p>
+<p>此外这句还有一个作用，就是当<code>new_data_type(size)</code>后面加入约束后，是可以对该列的约束进行修改，删除，添加等操作的。</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> &lt;old_table_name&gt; <span class="keyword">RENAME</span> &lt;new_table_name&gt;</span><br></pre></td></tr></table></figure>
 
 <p>这个语句是为表改名的。</p>
